@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-ucharclasses
 Version:	2.0
-Release:	10
+Release:	11
 Summary:	Switch fonts in XeTeX according to what is being processed
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/ucharclasses
