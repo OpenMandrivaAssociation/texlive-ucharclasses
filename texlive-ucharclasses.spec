@@ -1,18 +1,12 @@
-# revision 27820
-# category Package
-# catalog-ctan /macros/xetex/latex/ucharclasses
-# catalog-date 2012-09-26 16:27:49 +0200
-# catalog-license pd
-# catalog-version 2.0
 Name:		texlive-ucharclasses
-Version:	2.3.0
-Release:	2
+Version:	64782
+Release:	1
 Summary:	Switch fonts in XeTeX according to what is being processed
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/ucharclasses
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ but a series of rules of the form "when entering block ...,
 switch font to use ...".
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +36,7 @@ switch font to use ...".
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
