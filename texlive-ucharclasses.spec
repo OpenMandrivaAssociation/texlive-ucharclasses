@@ -3,7 +3,7 @@ Version:	64782
 Release:	2
 Summary:	Switch fonts in XeTeX according to what is being processed
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/ucharclasses
+URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/ucharclasses
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucharclasses.doc.r%{version}.tar.xz
